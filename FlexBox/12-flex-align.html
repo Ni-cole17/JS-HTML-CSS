@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>undamentos - Align</title>
+    <style>
+        .flex-container{
+            display: flex;
+            max-width: 350px;
+            border: 1px solid black;
+            margin-bottom: 20px;
+        }
+        .item{
+            flex:1;
+            background-color: brown;
+            color: white;
+            text-align: center;
+            font-size: 24px;
+            margin: 5px; 
+        }
+
+        .center{
+            align-self:center;
+        }
+        .start{
+            align-self: flex-start;
+        }
+        .end{
+            align-self: flex-end;
+        }
+        .baseline{
+            align-self: baseline;
+        }
+        .stretch{
+            align-self: stretch;
+        }
+        .auto{
+            align-self: auto;
+        }
+        .align-container{
+            align-items: center ;
+        }
+    </style>
+</head>
+<body>
+    <p>Auto:</p>
+   <div class="flex-container">
+        <div class="item auto">AA</div>
+        <div class="item auto">BBBB</div>
+        <div class="item auto">LOREM IPSUM LOREM</div>
+        <div class="item auto">C</div>
+   </div> 
+   <p>Mix</p>
+   <div class="flex-container">
+        <div class="item center">AA</div>
+        <div class="item start">BBBB</div>
+        <div class="item stretch">LOREM IPSUM LOREM</div>
+        <div class="item end">C</div>
+   </div> 
+</body>
+</html>
