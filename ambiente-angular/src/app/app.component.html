@@ -23,15 +23,10 @@
     <li class="list-group-item " *ngSwitchDefault>Default</li>
 </ul>
 
-<ul class="list-group mx-auto col-3">
-    <li
-    *ngFor = "let pessoa of pessoas" 
-    class="list-group-item">
-    O nome da pessoa é {{pessoa.nome}} e a idade é {{pessoa.idade}}
-    </li>
-</ul>
+<app-list-people></app-list-people>
 
-<h3 appMarcaTexto corDeFundo="blue" corDoTexto="black">{{nome}}</h3>
+
+<h3 appMarcaTexto corDeFundo="blue" corDoTexto="black"></h3>
 
 <button class="btn btn-success" (click)="clicou()">Clique Aqui</button>
 
@@ -42,3 +37,12 @@
 
 <button cor="amarelo">Clica</button>
 
+
+<div class="container my-5">
+  <div class="row d-flex align-items-center justify-content-center">
+    <h2>Listagem de Personagens RICK AND MORTY</h2>
+    <div class="col-12">
+    <app-list-api></app-list-api>
+    </div>
+ </div>
+</div>
