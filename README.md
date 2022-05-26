@@ -1,2 +1,1 @@
-# Philips Bootcamp
-Repositório para o Bootcamp You are You
+# Repositório para os principais conceitos e anotações de Javascript, HTML e CSS
